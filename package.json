@@ -1,0 +1,56 @@
+{
+  "name": "taro-code-inspector",
+  "version": "0.0.1",
+  "description": "A Taro development tool for code inspection and navigation - click components to jump to source code",
+  "keywords": [
+    "taro",
+    "plugin",
+    "development",
+    "debug",
+    "inspector",
+    "code-navigation",
+    "miniprogram"
+  ],
+  "author": "zev-zhao",
+  "homepage": "https://github.com/zev-zhao/taro-code-inspector#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "typings": "types/index.d.ts",
+  "files": [
+    "dist",
+    "index.js",
+    "types",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zev-zhao/taro-code-inspector.git"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "dev": "tsc -w",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/zev-zhao/taro-code-inspector/issues"
+  },
+  "engines": {
+    "node": ">= 18"
+  },
+  "dependencies": {
+    "launch-ide": "^1.0.6",
+    "portfinder": "^1.0.35"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.86",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/traverse": "^7.0.0",
+    "@babel/types": "^7.0.0",
+    "@tarojs/runtime": "^3.0.0 || ^4.0.0",
+    "@tarojs/service": "^3.0.0 || ^4.0.0"
+  }
+}

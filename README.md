@@ -14,6 +14,10 @@
 - ⚡ **零配置使用** - 开箱即用，无需复杂配置
 - 🚀 **开发环境专用** - 仅在开发环境中生效，不影响生产构建
 
+## 🎬 演示视频
+
+![Taro Code Inspector 演示](static/demo.gif)
+
 ## 📦 安装
 
 ```bash
@@ -34,7 +38,7 @@ yarn add taro-code-inspector --dev
 
 ```javascript
 const config = {
-  plugins: [["taro-code-inspector"]],
+  plugins: ["taro-code-inspector"],
 };
 
 module.exports = config;
